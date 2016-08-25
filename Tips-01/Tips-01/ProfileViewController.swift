@@ -131,23 +131,11 @@ extension ProfileViewController {
     }
  
     private func callPhone2(phone: String) {
-        guard let url = NSURL(string: "tel://\(phone)") else {
-            return
-        }
-        
-        if UIApplication.sharedApplication().canOpenURL(url) {
-            UIApplication.sharedApplication().openURL(url)
-        }
+        openApp("tel://\(phone)")
     }
     
     private func callPhone3(phone: String) {
-        guard let url = NSURL(string: "telprompt://\(phone)") else {
-            return
-        }
-        
-        if UIApplication.sharedApplication().canOpenURL(url) {
-            UIApplication.sharedApplication().openURL(url)
-        }
+        openApp("telprompt://\(phone)")
     }
     
     /**
@@ -167,13 +155,7 @@ extension ProfileViewController {
     }
     
     private func composeEmail2(email: String) {
-        guard let url = NSURL(string: "mailto://\(email)") else {
-            return
-        }
-        
-        if UIApplication.sharedApplication().canOpenURL(url) {
-            UIApplication.sharedApplication().openURL(url)
-        }
+        openApp("mailto://\(email)")
     }
     
     /**
@@ -192,18 +174,22 @@ extension ProfileViewController {
     }
     
     private func sendShortMessage2(withPhone phone: String) {
-        guard let url = NSURL(string: "sms://\(phone)") else {
-            return
-        }
-        
-        if UIApplication.sharedApplication().canOpenURL(url) {
-            UIApplication.sharedApplication().openURL(url)
-        }
+        openApp("sms://\(phone)")
     }
     
     private func alert(message: String) {
         let alertController = UIAlertController(title: "提示", message: message, preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "好的", style: .Cancel, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    private func openApp(URLSchema: String) {
+        guard let url = NSURL(string: URLSchema) else {
+            return
+        }
+        
+        if UIApplication.sharedApplication().canOpenURL(url) {
+            UIApplication.sharedApplication().openURL(url)
+        }
     }
 }
