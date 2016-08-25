@@ -17,12 +17,26 @@ struct URLSchema {
     static let mailto = "mailto://"
 }
 
+enum CallMode {
+    case application
+    case webView
+}
+
+enum MessageMode {
+    case application
+    case message
+}
+
 class ProfileViewController: UITableViewController {
     
     lazy var webView: UIWebView = {
         let result = UIWebView(frame: CGRectZero)
         return result
     }()
+    
+    var callMode = CallMode.application
+    
+    var messageMode = MessageMode.application
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +46,25 @@ class ProfileViewController: UITableViewController {
     
     deinit {
         webView.removeFromSuperview()
+    }
+    
+    
+    @IBAction func takeCallPhoneMode(sender: UISegmentedControl) {
+        let index = sender.selectedSegmentIndex;
+        if index == 0 {
+            self.callMode = .application
+        } else {
+            self.callMode = .webView
+        }
+    }
+    
+    @IBAction func takeSendMailAndSMSMode(sender: UISegmentedControl) {
+        let index = sender.selectedSegmentIndex;
+        if index == 0 {
+            self.messageMode = .application
+        } else {
+            self.messageMode = .message
+        }
     }
 }
 
@@ -60,14 +93,22 @@ extension ProfileViewController {
         
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         if let phoneCell = cell as? PhoneViewCell, phone = phoneCell.detailLabel.text {
-            callPhone2(phone)
+            if self.callMode == .application {
+                self.callPhoneByApplication(withPhone: phone)
+            } else {
+                self.callPhoneByWebView(withPhone: phone)
+            }
             return
         }
         
         guard let email = cell?.detailTextLabel?.text else {
             return
         }
-        composeEmail2(email)
+        if self.messageMode == .application {
+            self.composeEmailByApplication(withEmail: email)
+        } else {
+            self.composeEmailByMessage(withEmail: email)
+        }
     }
 }
 
@@ -77,7 +118,11 @@ extension ProfileViewController: PhoneViewCellDelegate {
         guard let phone = phoneViewCell.detailLabel.text else {
             return
         }
-        sendShortMessage2(withPhone: phone)
+        if self.messageMode == .application {
+            self.sendSMSByApplication(withPhone: phone)
+        } else {
+            self.sendSMSByMessage(withPhone: phone)
+        }
     }
 }
 
@@ -133,15 +178,15 @@ extension ProfileViewController {
      
      - parameter phone: 电话号码
      */
-    private func callPhone1(phone: String) {
-        webView.loadRequest(NSURLRequest(URL: NSURL(string: "tel://\(phone)")!))
+    private func callPhoneByWebView(withPhone phone: String) {
+        webView.loadRequest(NSURLRequest(URL: NSURL(string: URLSchema.tel + phone)!))
     }
  
-    private func callPhone2(phone: String) {
+    private func callPhoneByApplication(withPhone phone: String) {
         openApp(URLSchema.tel + phone)
     }
     
-    private func callPhone3(phone: String) {
+    private func callPhone(phone: String) {
         openApp(URLSchema.telprompt + phone)
     }
     
@@ -150,7 +195,7 @@ extension ProfileViewController {
      
      - parameter email: 邮箱地址
      */
-    private func composeEmail(email: String) {
+    private func composeEmailByMessage(withEmail email: String) {
         if !MFMailComposeViewController.canSendMail() {
             return
         }
@@ -161,7 +206,7 @@ extension ProfileViewController {
         self.presentViewController(mailComposeViewController, animated: true, completion: nil)
     }
     
-    private func composeEmail2(email: String) {
+    private func composeEmailByApplication(withEmail email: String) {
         openApp(URLSchema.mailto + email)
     }
     
@@ -170,7 +215,7 @@ extension ProfileViewController {
      
      - parameter phone: 电话号码。
      */
-    private func sendShortMessage1(withPhone phone: String) {
+    private func sendSMSByMessage(withPhone phone: String) {
         if !MFMessageComposeViewController.canSendText() {
             return
         }
@@ -180,7 +225,7 @@ extension ProfileViewController {
         self.presentViewController(messageComposeViewController, animated: true, completion: nil)
     }
     
-    private func sendShortMessage2(withPhone phone: String) {
+    private func sendSMSByApplication(withPhone phone: String) {
         openApp(URLSchema.sms + phone)
     }
     
