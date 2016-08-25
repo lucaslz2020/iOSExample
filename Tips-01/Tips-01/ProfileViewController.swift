@@ -10,6 +10,13 @@ import UIKit
 import MessageUI
 import WebKit
 
+struct URLSchema {
+    static let sms = "sms://"
+    static let tel = "tel://"
+    static let telprompt = "telprompt://"
+    static let mailto = "mailto://"
+}
+
 class ProfileViewController: UITableViewController {
     
     lazy var webView: UIWebView = {
@@ -131,11 +138,11 @@ extension ProfileViewController {
     }
  
     private func callPhone2(phone: String) {
-        openApp("tel://\(phone)")
+        openApp(URLSchema.tel + phone)
     }
     
     private func callPhone3(phone: String) {
-        openApp("telprompt://\(phone)")
+        openApp(URLSchema.telprompt + phone)
     }
     
     /**
@@ -155,7 +162,7 @@ extension ProfileViewController {
     }
     
     private func composeEmail2(email: String) {
-        openApp("mailto://\(email)")
+        openApp(URLSchema.mailto + email)
     }
     
     /**
@@ -174,7 +181,7 @@ extension ProfileViewController {
     }
     
     private func sendShortMessage2(withPhone phone: String) {
-        openApp("sms://\(phone)")
+        openApp(URLSchema.sms + phone)
     }
     
     private func alert(message: String) {
