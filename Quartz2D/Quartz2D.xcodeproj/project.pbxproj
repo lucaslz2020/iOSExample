@@ -31,6 +31,7 @@
 		72C7166E1D707C570065AB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C716581D707C570065AB6B /* LaunchScreen.storyboard */; };
 		72C7166F1D707C570065AB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C716591D707C570065AB6B /* Main.storyboard */; };
 		72C716731D707CA20065AB6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C716721D707CA20065AB6B /* Images.xcassets */; };
+		72C716781D707D630065AB6B /* LZQuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716771D707D630065AB6B /* LZQuartzView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		72C716581D707C570065AB6B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72C716591D707C570065AB6B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72C716721D707CA20065AB6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		72C716761D707D630065AB6B /* LZQuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzView.h; sourceTree = "<group>"; };
+		72C716771D707D630065AB6B /* LZQuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				72C716221D707C570065AB6B /* AppDelegate.h */,
 				72C716231D707C570065AB6B /* AppDelegate.m */,
 				72C7163C1D707C570065AB6B /* main.m */,
+				72C716761D707D630065AB6B /* LZQuartzView.h */,
+				72C716771D707D630065AB6B /* LZQuartzView.m */,
 				72C716241D707C570065AB6B /* CGPathRef */,
 				72C716391D707C570065AB6B /* Image */,
 				72C7163D1D707C570065AB6B /* PDF */,
@@ -434,6 +439,7 @@
 				72C716601D707C570065AB6B /* LZQuartzLineView.m in Sources */,
 				72C716671D707C570065AB6B /* LZArcView.m in Sources */,
 				72C716611D707C570065AB6B /* LZQuartzPathDrawingModeView.m in Sources */,
+				72C716781D707D630065AB6B /* LZQuartzView.m in Sources */,
 				72C7165F1D707C570065AB6B /* LZQuartzEllipseArcView.m in Sources */,
 				72C716641D707C570065AB6B /* main.m in Sources */,
 				72C7166A1D707C570065AB6B /* LZLineView.m in Sources */,
