@@ -26,6 +26,7 @@
 		727FA3B31D6C7C880014DE51 /* LZLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727FA3A91D6C7C880014DE51 /* LZLineView.m */; };
 		727FA3B41D6C7C880014DE51 /* LZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727FA3AB1D6C7C880014DE51 /* LZProgressView.m */; };
 		727FA3B51D6C7C880014DE51 /* LZRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727FA3AD1D6C7C880014DE51 /* LZRectangleView.m */; };
+		72B685791D70315800929EBE /* LZQuartzBezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B685781D70315800929EBE /* LZQuartzBezierView.m */; };
 		72D98DB01D6EDD370054AFF2 /* LZQuartzLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D98DAF1D6EDD370054AFF2 /* LZQuartzLineView.m */; };
 		72D98DB31D6EEEA40054AFF2 /* LZQuartzCapJoinWidthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D98DB21D6EEEA40054AFF2 /* LZQuartzCapJoinWidthView.m */; };
 		72D98DB61D6EEFD30054AFF2 /* LZQuartzCapJoinWidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D98DB51D6EEFD30054AFF2 /* LZQuartzCapJoinWidthViewController.m */; };
@@ -79,6 +80,8 @@
 		727FA3AB1D6C7C880014DE51 /* LZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZProgressView.m; sourceTree = "<group>"; };
 		727FA3AC1D6C7C880014DE51 /* LZRectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZRectangleView.h; sourceTree = "<group>"; };
 		727FA3AD1D6C7C880014DE51 /* LZRectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZRectangleView.m; sourceTree = "<group>"; };
+		72B685771D70315800929EBE /* LZQuartzBezierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzBezierView.h; sourceTree = "<group>"; };
+		72B685781D70315800929EBE /* LZQuartzBezierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzBezierView.m; sourceTree = "<group>"; };
 		72D98DAE1D6EDD370054AFF2 /* LZQuartzLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzLineView.h; sourceTree = "<group>"; };
 		72D98DAF1D6EDD370054AFF2 /* LZQuartzLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzLineView.m; sourceTree = "<group>"; };
 		72D98DB11D6EEEA40054AFF2 /* LZQuartzCapJoinWidthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzCapJoinWidthView.h; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				727DD7411D6F41460015C28E /* LZQuartzPathDrawingModeView.m */,
 				727DD7431D70191B0015C28E /* LZQuartzEllipseArcView.h */,
 				727DD7441D70191B0015C28E /* LZQuartzEllipseArcView.m */,
+				72B685771D70315800929EBE /* LZQuartzBezierView.h */,
+				72B685781D70315800929EBE /* LZQuartzBezierView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				727687C41D68594000122644 /* AppDelegate.m in Sources */,
 				72D98DB61D6EEFD30054AFF2 /* LZQuartzCapJoinWidthViewController.m in Sources */,
 				72D98DB01D6EDD370054AFF2 /* LZQuartzLineView.m in Sources */,
+				72B685791D70315800929EBE /* LZQuartzBezierView.m in Sources */,
 				727687C11D68594000122644 /* main.m in Sources */,
 				727FA3B11D6C7C880014DE51 /* LZCapJoinWidthView.m in Sources */,
 				727DD73C1D6F2A3A0015C28E /* LZQuartzView.m in Sources */,
