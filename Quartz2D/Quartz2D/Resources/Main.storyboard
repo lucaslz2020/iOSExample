@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eUV-fR-LrJ">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
@@ -11,7 +12,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aDG-L3-WrR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection id="PCu-Ux-kuK">
                                 <cells>
@@ -130,6 +131,29 @@
                                             <segue destination="S4I-k5-ekg" kind="show" id="tWa-JV-RQ3"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="NiM-fZ-1pL" style="IBUITableViewCellStyleDefault" id="Ttp-ID-i5q">
+                                        <rect key="frame" x="0.0" y="284" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ttp-ID-i5q" id="kSX-4e-m7b">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shadow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NiM-fZ-1pL">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BEl-OT-4WP" kind="show" id="qHr-89-3cN"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -159,7 +183,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj7-0R-4Te" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3247" y="-1849"/>
+            <point key="canvasLocation" x="-2997" y="-1849"/>
         </scene>
         <!--UIBezierPath-->
         <scene sceneID="pTg-CQ-qDU">
@@ -167,7 +191,7 @@
                 <viewControllerPlaceholder storyboardName="UIBezierPath" id="9Um-wc-Puu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDc-VC-vx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1365.5" y="-1875"/>
+            <point key="canvasLocation" x="-1779.5" y="-1927"/>
         </scene>
         <!--CGPath-->
         <scene sceneID="1gN-QM-X2L">
@@ -175,7 +199,7 @@
                 <viewControllerPlaceholder storyboardName="CGPath" id="vRI-10-fkE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhK-sg-1cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1382" y="-1778"/>
+            <point key="canvasLocation" x="-1804" y="-1975"/>
         </scene>
         <!--PDF-->
         <scene sceneID="WRw-c5-3Ne">
@@ -183,7 +207,7 @@
                 <viewControllerPlaceholder storyboardName="PDF" id="vU5-PH-Khc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fqv-vI-PLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1383.5" y="-2226"/>
+            <point key="canvasLocation" x="-1793.5" y="-1875"/>
         </scene>
         <!--Image-->
         <scene sceneID="u6J-p8-5CV">
@@ -191,7 +215,7 @@
                 <viewControllerPlaceholder storyboardName="Image" id="Lid-hu-fgB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AS-iN-dZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1377.5" y="-2103"/>
+            <point key="canvasLocation" x="-1793.5" y="-1825"/>
         </scene>
         <!--Text-->
         <scene sceneID="Wmg-qc-00S">
@@ -199,7 +223,23 @@
                 <viewControllerPlaceholder storyboardName="Text" id="S4I-k5-ekg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXW-uN-Yb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1378" y="-1995"/>
+            <point key="canvasLocation" x="-1794" y="-1776"/>
+        </scene>
+        <!--Shadow-->
+        <scene sceneID="b2F-8x-gJu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shadow" id="BEl-OT-4WP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Twk-YH-GWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1783" y="-1730"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="Msv-rH-uXl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Test" id="STv-Sv-2cN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkn-Wt-XOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1672" y="-1292"/>
         </scene>
     </scenes>
 </document>
