@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		727687DA1D68594100122644 /* Quartz2DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 727687D91D68594100122644 /* Quartz2DTests.m */; };
+		72BE179B1D70808E00EB0B03 /* LZQuartzPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BE179A1D70808E00EB0B03 /* LZQuartzPDFView.m */; };
+		72BE179D1D713F8400EB0B03 /* quartz.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72BE179C1D713F8400EB0B03 /* quartz.pdf */; };
+		72BE17A61D7183B700EB0B03 /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BE17A51D7183B700EB0B03 /* LZNavigationController.m */; };
+		72BE17A91D71849F00EB0B03 /* LZQuartzImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BE17A81D71849F00EB0B03 /* LZQuartzImageView.m */; };
+		72BE17AC1D7184AA00EB0B03 /* LZQuartzTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BE17AB1D7184AA00EB0B03 /* LZQuartzTextView.m */; };
 		72C7165A1D707C570065AB6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716231D707C570065AB6B /* AppDelegate.m */; };
 		72C7165B1D707C570065AB6B /* LZQuartzCapJoinWidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716271D707C570065AB6B /* LZQuartzCapJoinWidthViewController.m */; };
 		72C7165C1D707C570065AB6B /* LZQuartzBezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7162A1D707C570065AB6B /* LZQuartzBezierView.m */; };
@@ -17,7 +22,6 @@
 		72C716601D707C570065AB6B /* LZQuartzLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716321D707C570065AB6B /* LZQuartzLineView.m */; };
 		72C716611D707C570065AB6B /* LZQuartzPathDrawingModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716341D707C570065AB6B /* LZQuartzPathDrawingModeView.m */; };
 		72C716621D707C570065AB6B /* LZQuartzRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716361D707C570065AB6B /* LZQuartzRectView.m */; };
-		72C716631D707C570065AB6B /* LZQuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716381D707C570065AB6B /* LZQuartzView.m */; };
 		72C716641D707C570065AB6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C7163C1D707C570065AB6B /* main.m */; };
 		72C716651D707C570065AB6B /* LZCapJoinWidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716461D707C570065AB6B /* LZCapJoinWidthViewController.m */; };
 		72C716661D707C570065AB6B /* LZProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716481D707C570065AB6B /* LZProgressViewController.m */; };
@@ -27,7 +31,6 @@
 		72C7166A1D707C570065AB6B /* LZLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716511D707C570065AB6B /* LZLineView.m */; };
 		72C7166B1D707C570065AB6B /* LZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716531D707C570065AB6B /* LZProgressView.m */; };
 		72C7166C1D707C570065AB6B /* LZRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C716551D707C570065AB6B /* LZRectangleView.m */; };
-		72C7166D1D707C570065AB6B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72C716571D707C570065AB6B /* Info.plist */; };
 		72C7166E1D707C570065AB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C716581D707C570065AB6B /* LaunchScreen.storyboard */; };
 		72C7166F1D707C570065AB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C716591D707C570065AB6B /* Main.storyboard */; };
 		72C716731D707CA20065AB6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C716721D707CA20065AB6B /* Images.xcassets */; };
@@ -49,6 +52,15 @@
 		727687D51D68594100122644 /* Quartz2DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quartz2DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		727687D91D68594100122644 /* Quartz2DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2DTests.m; sourceTree = "<group>"; };
 		727687DB1D68594100122644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BE17991D70808E00EB0B03 /* LZQuartzPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzPDFView.h; sourceTree = "<group>"; };
+		72BE179A1D70808E00EB0B03 /* LZQuartzPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzPDFView.m; sourceTree = "<group>"; };
+		72BE179C1D713F8400EB0B03 /* quartz.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = quartz.pdf; sourceTree = "<group>"; };
+		72BE17A41D7183B700EB0B03 /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
+		72BE17A51D7183B700EB0B03 /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
+		72BE17A71D71849E00EB0B03 /* LZQuartzImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzImageView.h; sourceTree = "<group>"; };
+		72BE17A81D71849F00EB0B03 /* LZQuartzImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzImageView.m; sourceTree = "<group>"; };
+		72BE17AA1D7184AA00EB0B03 /* LZQuartzTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzTextView.h; sourceTree = "<group>"; };
+		72BE17AB1D7184AA00EB0B03 /* LZQuartzTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzTextView.m; sourceTree = "<group>"; };
 		72C716221D707C570065AB6B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72C716231D707C570065AB6B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		72C716261D707C570065AB6B /* LZQuartzCapJoinWidthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzCapJoinWidthViewController.h; sourceTree = "<group>"; };
@@ -67,8 +79,6 @@
 		72C716341D707C570065AB6B /* LZQuartzPathDrawingModeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzPathDrawingModeView.m; sourceTree = "<group>"; };
 		72C716351D707C570065AB6B /* LZQuartzRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzRectView.h; sourceTree = "<group>"; };
 		72C716361D707C570065AB6B /* LZQuartzRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzRectView.m; sourceTree = "<group>"; };
-		72C716371D707C570065AB6B /* LZQuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzView.h; sourceTree = "<group>"; };
-		72C716381D707C570065AB6B /* LZQuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzView.m; sourceTree = "<group>"; };
 		72C7163C1D707C570065AB6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72C716451D707C570065AB6B /* LZCapJoinWidthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCapJoinWidthViewController.h; sourceTree = "<group>"; };
 		72C716461D707C570065AB6B /* LZCapJoinWidthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCapJoinWidthViewController.m; sourceTree = "<group>"; };
@@ -156,6 +166,8 @@
 				72C7163C1D707C570065AB6B /* main.m */,
 				72C716761D707D630065AB6B /* LZQuartzView.h */,
 				72C716771D707D630065AB6B /* LZQuartzView.m */,
+				72BE17A41D7183B700EB0B03 /* LZNavigationController.h */,
+				72BE17A51D7183B700EB0B03 /* LZNavigationController.m */,
 				72C716241D707C570065AB6B /* CGPathRef */,
 				72C716391D707C570065AB6B /* Image */,
 				72C7163D1D707C570065AB6B /* PDF */,
@@ -200,8 +212,6 @@
 				72C716341D707C570065AB6B /* LZQuartzPathDrawingModeView.m */,
 				72C716351D707C570065AB6B /* LZQuartzRectView.h */,
 				72C716361D707C570065AB6B /* LZQuartzRectView.m */,
-				72C716371D707C570065AB6B /* LZQuartzView.h */,
-				72C716381D707C570065AB6B /* LZQuartzView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +235,8 @@
 		72C7163B1D707C570065AB6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				72BE17A71D71849E00EB0B03 /* LZQuartzImageView.h */,
+				72BE17A81D71849F00EB0B03 /* LZQuartzImageView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +260,8 @@
 		72C7163F1D707C570065AB6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				72BE17991D70808E00EB0B03 /* LZQuartzPDFView.h */,
+				72BE179A1D70808E00EB0B03 /* LZQuartzPDFView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +285,8 @@
 		72C716421D707C570065AB6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				72BE17AA1D7184AA00EB0B03 /* LZQuartzTextView.h */,
+				72BE17AB1D7184AA00EB0B03 /* LZQuartzTextView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +333,7 @@
 		72C716561D707C570065AB6B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				72BE179C1D713F8400EB0B03 /* quartz.pdf */,
 				72C716721D707CA20065AB6B /* Images.xcassets */,
 				72C716571D707C570065AB6B /* Info.plist */,
 				72C716581D707C570065AB6B /* LaunchScreen.storyboard */,
@@ -369,6 +386,7 @@
 		727687B41D68594000122644 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LZ;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "三只小猪";
 				TargetAttributes = {
@@ -382,7 +400,7 @@
 				};
 			};
 			buildConfigurationList = 727687B71D68594000122644 /* Build configuration list for PBXProject "Quartz2D" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -405,9 +423,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BE179D1D713F8400EB0B03 /* quartz.pdf in Resources */,
 				72C7166F1D707C570065AB6B /* Main.storyboard in Resources */,
 				72C716731D707CA20065AB6B /* Images.xcassets in Resources */,
-				72C7166D1D707C570065AB6B /* Info.plist in Resources */,
 				72C7166E1D707C570065AB6B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,22 +447,25 @@
 				72C7165C1D707C570065AB6B /* LZQuartzBezierView.m in Sources */,
 				72C7165D1D707C570065AB6B /* LZQuartzCapJoinWidthView.m in Sources */,
 				72C716651D707C570065AB6B /* LZCapJoinWidthViewController.m in Sources */,
+				72BE17A61D7183B700EB0B03 /* LZNavigationController.m in Sources */,
 				72C7165E1D707C570065AB6B /* LZQuartzDashView.m in Sources */,
-				72C716631D707C570065AB6B /* LZQuartzView.m in Sources */,
 				72C7166C1D707C570065AB6B /* LZRectangleView.m in Sources */,
 				72C716661D707C570065AB6B /* LZProgressViewController.m in Sources */,
 				72C7165A1D707C570065AB6B /* AppDelegate.m in Sources */,
 				72C7165B1D707C570065AB6B /* LZQuartzCapJoinWidthViewController.m in Sources */,
 				72C716681D707C570065AB6B /* LZCapJoinWidthView.m in Sources */,
 				72C716601D707C570065AB6B /* LZQuartzLineView.m in Sources */,
+				72BE17AC1D7184AA00EB0B03 /* LZQuartzTextView.m in Sources */,
 				72C716671D707C570065AB6B /* LZArcView.m in Sources */,
 				72C716611D707C570065AB6B /* LZQuartzPathDrawingModeView.m in Sources */,
+				72BE17A91D71849F00EB0B03 /* LZQuartzImageView.m in Sources */,
 				72C716781D707D630065AB6B /* LZQuartzView.m in Sources */,
 				72C7165F1D707C570065AB6B /* LZQuartzEllipseArcView.m in Sources */,
 				72C716641D707C570065AB6B /* main.m in Sources */,
 				72C7166A1D707C570065AB6B /* LZLineView.m in Sources */,
 				72C7166B1D707C570065AB6B /* LZProgressView.m in Sources */,
 				72C716691D707C570065AB6B /* LZCurveView.m in Sources */,
+				72BE179B1D70808E00EB0B03 /* LZQuartzPDFView.m in Sources */,
 				72C716621D707C570065AB6B /* LZQuartzRectView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,9 +577,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Quartz2D/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasleelz.Quartz2D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,9 +592,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Quartz2D/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasleelz.Quartz2D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
