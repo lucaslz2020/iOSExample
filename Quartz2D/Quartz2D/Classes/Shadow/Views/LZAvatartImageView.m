@@ -39,6 +39,7 @@
     shadowView.layer.shadowOffset = CGSizeZero;
     shadowView.layer.shadowOpacity = 0.8;
     shadowView.layer.shadowRadius = 10;
+    shadowView.layer.shadowPath = [UIBezierPath bezierPathWithRect:shadowView.bounds].CGPath;
     shadowView.clipsToBounds = NO;
     
     UIImageView *avatarImageView = [[UIImageView alloc] initWithFrame:shadowView.bounds];
