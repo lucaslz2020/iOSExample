@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7256DBEA1D73DD0100F51F58 /* LZQuartzShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7256DBE91D73DD0100F51F58 /* LZQuartzShadowView.m */; };
+		7256DBEE1D73DDF500F51F58 /* UIBezierPath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBED1D73DDF500F51F58 /* UIBezierPath.storyboard */; };
+		7256DBF01D73DE1100F51F58 /* CGPath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBEF1D73DE1100F51F58 /* CGPath.storyboard */; };
+		7256DBF21D73DE4E00F51F58 /* PDF.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBF11D73DE4E00F51F58 /* PDF.storyboard */; };
+		7256DBF41D73DE5C00F51F58 /* Image.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBF31D73DE5C00F51F58 /* Image.storyboard */; };
+		7256DBF61D73DE6800F51F58 /* Text.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBF51D73DE6800F51F58 /* Text.storyboard */; };
 		727687DA1D68594100122644 /* Quartz2DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 727687D91D68594100122644 /* Quartz2DTests.m */; };
 		72BE179B1D70808E00EB0B03 /* LZQuartzPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BE179A1D70808E00EB0B03 /* LZQuartzPDFView.m */; };
 		72BE179D1D713F8400EB0B03 /* quartz.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72BE179C1D713F8400EB0B03 /* quartz.pdf */; };
@@ -48,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7256DBE81D73DD0100F51F58 /* LZQuartzShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzShadowView.h; sourceTree = "<group>"; };
+		7256DBE91D73DD0100F51F58 /* LZQuartzShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzShadowView.m; sourceTree = "<group>"; };
+		7256DBED1D73DDF500F51F58 /* UIBezierPath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIBezierPath.storyboard; sourceTree = "<group>"; };
+		7256DBEF1D73DE1100F51F58 /* CGPath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CGPath.storyboard; sourceTree = "<group>"; };
+		7256DBF11D73DE4E00F51F58 /* PDF.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PDF.storyboard; sourceTree = "<group>"; };
+		7256DBF31D73DE5C00F51F58 /* Image.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Image.storyboard; sourceTree = "<group>"; };
+		7256DBF51D73DE6800F51F58 /* Text.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Text.storyboard; sourceTree = "<group>"; };
 		727687BC1D68594000122644 /* Quartz2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quartz2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		727687D51D68594100122644 /* Quartz2DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quartz2DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		727687D91D68594100122644 /* Quartz2DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2DTests.m; sourceTree = "<group>"; };
@@ -122,6 +135,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7256DBE61D73DCDE00F51F58 /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				7256DBE71D73DCDE00F51F58 /* Views */,
+			);
+			path = Shadow;
+			sourceTree = "<group>";
+		};
+		7256DBE71D73DCDE00F51F58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7256DBE81D73DD0100F51F58 /* LZQuartzShadowView.h */,
+				7256DBE91D73DD0100F51F58 /* LZQuartzShadowView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		727687B31D68594000122644 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +201,7 @@
 				72C716241D707C570065AB6B /* CGPathRef */,
 				72C716391D707C570065AB6B /* Image */,
 				72C7163D1D707C570065AB6B /* PDF */,
+				7256DBE61D73DCDE00F51F58 /* Shadow */,
 				72C716401D707C570065AB6B /* Text */,
 				72C716431D707C570065AB6B /* UIBezierPath */,
 			);
@@ -338,6 +369,11 @@
 				72C716571D707C570065AB6B /* Info.plist */,
 				72C716581D707C570065AB6B /* LaunchScreen.storyboard */,
 				72C716591D707C570065AB6B /* Main.storyboard */,
+				7256DBF51D73DE6800F51F58 /* Text.storyboard */,
+				7256DBF31D73DE5C00F51F58 /* Image.storyboard */,
+				7256DBF11D73DE4E00F51F58 /* PDF.storyboard */,
+				7256DBEF1D73DE1100F51F58 /* CGPath.storyboard */,
+				7256DBED1D73DDF500F51F58 /* UIBezierPath.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -424,9 +460,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72BE179D1D713F8400EB0B03 /* quartz.pdf in Resources */,
+				7256DBEE1D73DDF500F51F58 /* UIBezierPath.storyboard in Resources */,
+				7256DBF41D73DE5C00F51F58 /* Image.storyboard in Resources */,
 				72C7166F1D707C570065AB6B /* Main.storyboard in Resources */,
 				72C716731D707CA20065AB6B /* Images.xcassets in Resources */,
 				72C7166E1D707C570065AB6B /* LaunchScreen.storyboard in Resources */,
+				7256DBF61D73DE6800F51F58 /* Text.storyboard in Resources */,
+				7256DBF21D73DE4E00F51F58 /* PDF.storyboard in Resources */,
+				7256DBF01D73DE1100F51F58 /* CGPath.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +506,7 @@
 				72C7166A1D707C570065AB6B /* LZLineView.m in Sources */,
 				72C7166B1D707C570065AB6B /* LZProgressView.m in Sources */,
 				72C716691D707C570065AB6B /* LZCurveView.m in Sources */,
+				7256DBEA1D73DD0100F51F58 /* LZQuartzShadowView.m in Sources */,
 				72BE179B1D70808E00EB0B03 /* LZQuartzPDFView.m in Sources */,
 				72C716621D707C570065AB6B /* LZQuartzRectView.m in Sources */,
 			);
@@ -579,7 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Quartz2D/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasleelz.Quartz2D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,7 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Quartz2D/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasleelz.Quartz2D;
 				PRODUCT_NAME = "$(TARGET_NAME)";
