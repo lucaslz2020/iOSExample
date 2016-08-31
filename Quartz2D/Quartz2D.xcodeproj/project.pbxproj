@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721697861D7685D8007595F7 /* LZQuartzTransparencyLayersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 721697851D7685D8007595F7 /* LZQuartzTransparencyLayersView.m */; };
+		7216978A1D768735007595F7 /* TransparencyLayers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721697891D768735007595F7 /* TransparencyLayers.storyboard */; };
+		7216978C1D76B1DC007595F7 /* AlphaOpaqueHidden.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216978B1D76B1DC007595F7 /* AlphaOpaqueHidden.storyboard */; };
 		7256DBEA1D73DD0100F51F58 /* LZQuartzShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7256DBE91D73DD0100F51F58 /* LZQuartzShadowView.m */; };
 		7256DBEE1D73DDF500F51F58 /* UIBezierPath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBED1D73DDF500F51F58 /* UIBezierPath.storyboard */; };
 		7256DBF01D73DE1100F51F58 /* CGPath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7256DBEF1D73DE1100F51F58 /* CGPath.storyboard */; };
@@ -57,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721697841D7685D8007595F7 /* LZQuartzTransparencyLayersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzTransparencyLayersView.h; sourceTree = "<group>"; };
+		721697851D7685D8007595F7 /* LZQuartzTransparencyLayersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzTransparencyLayersView.m; sourceTree = "<group>"; };
+		721697891D768735007595F7 /* TransparencyLayers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransparencyLayers.storyboard; sourceTree = "<group>"; };
+		7216978B1D76B1DC007595F7 /* AlphaOpaqueHidden.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlphaOpaqueHidden.storyboard; sourceTree = "<group>"; };
 		7256DBE81D73DD0100F51F58 /* LZQuartzShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZQuartzShadowView.h; sourceTree = "<group>"; };
 		7256DBE91D73DD0100F51F58 /* LZQuartzShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZQuartzShadowView.m; sourceTree = "<group>"; };
 		7256DBED1D73DDF500F51F58 /* UIBezierPath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIBezierPath.storyboard; sourceTree = "<group>"; };
@@ -143,6 +150,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		721697821D7685A9007595F7 /* TransparencyLayers */ = {
+			isa = PBXGroup;
+			children = (
+				721697831D7685B9007595F7 /* Views */,
+			);
+			path = TransparencyLayers;
+			sourceTree = "<group>";
+		};
+		721697831D7685B9007595F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				721697841D7685D8007595F7 /* LZQuartzTransparencyLayersView.h */,
+				721697851D7685D8007595F7 /* LZQuartzTransparencyLayersView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7256DBE61D73DCDE00F51F58 /* Shadow */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +238,7 @@
 				72C716391D707C570065AB6B /* Image */,
 				72C7163D1D707C570065AB6B /* PDF */,
 				7256DBE61D73DCDE00F51F58 /* Shadow */,
+				721697821D7685A9007595F7 /* TransparencyLayers */,
 				72C716401D707C570065AB6B /* Text */,
 				72C716431D707C570065AB6B /* UIBezierPath */,
 			);
@@ -381,6 +406,8 @@
 				72C716571D707C570065AB6B /* Info.plist */,
 				72C716581D707C570065AB6B /* LaunchScreen.storyboard */,
 				72C716591D707C570065AB6B /* Main.storyboard */,
+				7216978B1D76B1DC007595F7 /* AlphaOpaqueHidden.storyboard */,
+				721697891D768735007595F7 /* TransparencyLayers.storyboard */,
 				7256DBF71D73E0D400F51F58 /* Shadow.storyboard */,
 				7256DBF51D73DE6800F51F58 /* Text.storyboard */,
 				7256DBF31D73DE5C00F51F58 /* Image.storyboard */,
@@ -473,12 +500,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72BE179D1D713F8400EB0B03 /* quartz.pdf in Resources */,
+				7216978A1D768735007595F7 /* TransparencyLayers.storyboard in Resources */,
 				7256DBEE1D73DDF500F51F58 /* UIBezierPath.storyboard in Resources */,
 				7256DBF41D73DE5C00F51F58 /* Image.storyboard in Resources */,
 				72C7166F1D707C570065AB6B /* Main.storyboard in Resources */,
 				72C716731D707CA20065AB6B /* Images.xcassets in Resources */,
 				72C7166E1D707C570065AB6B /* LaunchScreen.storyboard in Resources */,
 				7256DBF61D73DE6800F51F58 /* Text.storyboard in Resources */,
+				7216978C1D76B1DC007595F7 /* AlphaOpaqueHidden.storyboard in Resources */,
 				7256DBF21D73DE4E00F51F58 /* PDF.storyboard in Resources */,
 				7256DBF81D73E0D400F51F58 /* Shadow.storyboard in Resources */,
 				7256DBF01D73DE1100F51F58 /* CGPath.storyboard in Resources */,
@@ -523,6 +552,7 @@
 				72C7166B1D707C570065AB6B /* LZProgressView.m in Sources */,
 				72C716691D707C570065AB6B /* LZCurveView.m in Sources */,
 				7256DBEA1D73DD0100F51F58 /* LZQuartzShadowView.m in Sources */,
+				721697861D7685D8007595F7 /* LZQuartzTransparencyLayersView.m in Sources */,
 				72BE179B1D70808E00EB0B03 /* LZQuartzPDFView.m in Sources */,
 				72C716621D707C570065AB6B /* LZQuartzRectView.m in Sources */,
 			);

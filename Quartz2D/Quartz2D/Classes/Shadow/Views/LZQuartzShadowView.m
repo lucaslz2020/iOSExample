@@ -38,8 +38,8 @@
     CGContextSaveGState(context);
     CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
 
-    const CGFloat components[] = {1.0, 0.0, 0.0, 0.6};
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    const CGFloat components[] = {1.0, 0.0, 0.0, 0.6};
     CGColorRef color = CGColorCreate(colorSpace, components);
     CGContextSetShadowWithColor(context, CGSizeMake(10.0, 10.0), 5, color);
 

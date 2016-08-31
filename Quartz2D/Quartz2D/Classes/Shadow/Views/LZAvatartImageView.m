@@ -49,6 +49,8 @@
     [shadowView addSubview:avatarImageView];
     
     [self addSubview:shadowView];
+    
+    CGContextSetFillColorWithColor(nil, UIColor.redColor.CGColor);
 }
 
 
