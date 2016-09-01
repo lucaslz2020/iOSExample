@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gd1-Mw-R8r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Quartz Gradients View Controller-->
+        <scene sceneID="I0V-mJ-2Cd">
+            <objects>
+                <viewController id="Gd1-Mw-R8r" customClass="LZQuartzGradientsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L6c-wq-A5f"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZDg-L9-7SA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tSL-Gq-5fQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WW6-bc-a8Y" customClass="LZQuartzGradientsView">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="D3R-1k-Gdw"/>
+                                    <constraint firstAttribute="height" constant="300" id="ecG-mv-e8C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WW6-bc-a8Y" firstAttribute="centerY" secondItem="tSL-Gq-5fQ" secondAttribute="centerY" id="NPD-5g-5Cl"/>
+                            <constraint firstItem="WW6-bc-a8Y" firstAttribute="centerX" secondItem="tSL-Gq-5fQ" secondAttribute="centerX" id="hwT-mS-2xd"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVr-MZ-WVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1731" y="-1089"/>
+        </scene>
+    </scenes>
+</document>
