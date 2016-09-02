@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72BA90D31D7918B000EF3174 /* QRCodeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA90D21D7918B000EF3174 /* QRCodeImageView.swift */; };
+		72BA90D51D791AFE00EF3174 /* QRCodeImageHasSeparatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA90D41D791AFE00EF3174 /* QRCodeImageHasSeparatedView.swift */; };
 		72E2C29E1D7824BF00F11C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2C29D1D7824BF00F11C03 /* AppDelegate.swift */; };
 		72E2C2A01D7824BF00F11C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2C29F1D7824BF00F11C03 /* ViewController.swift */; };
 		72E2C2A31D7824BF00F11C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E2C2A11D7824BF00F11C03 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72BA90D21D7918B000EF3174 /* QRCodeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeImageView.swift; sourceTree = "<group>"; };
+		72BA90D41D791AFE00EF3174 /* QRCodeImageHasSeparatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeImageHasSeparatedView.swift; sourceTree = "<group>"; };
 		72E2C29A1D7824BF00F11C03 /* QRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E2C29D1D7824BF00F11C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E2C29F1D7824BF00F11C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				72E2C2A61D7824BF00F11C03 /* LaunchScreen.storyboard */,
 				72E2C2A91D7824BF00F11C03 /* Info.plist */,
 				72E2C2AF1D78277700F11C03 /* QRCodeView.swift */,
+				72BA90D21D7918B000EF3174 /* QRCodeImageView.swift */,
+				72BA90D41D791AFE00EF3174 /* QRCodeImageHasSeparatedView.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BA90D31D7918B000EF3174 /* QRCodeImageView.swift in Sources */,
 				72E2C2B01D78277700F11C03 /* QRCodeView.swift in Sources */,
 				72E2C2A01D7824BF00F11C03 /* ViewController.swift in Sources */,
+				72BA90D51D791AFE00EF3174 /* QRCodeImageHasSeparatedView.swift in Sources */,
 				72E2C29E1D7824BF00F11C03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +300,7 @@
 				72E2C2AE1D7824BF00F11C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
