@@ -12,9 +12,7 @@ import UIKit
 class QRCodeView: UIView {
     
     lazy var QRCodeImageView: UIImageView = {
-        let result: UIImageView = UIImageView(frame: self.bounds)
-//        result.image = QRCodeView.createQRCode("http://lucaslz.com")
-        
+        let result: UIImageView = UIImageView(frame: self.bounds)        
         result.image = QRCodeView.createQRCodeToSolveBlur("http://lucaslz.com", withSize: self.bounds.size)
         return result
     }()

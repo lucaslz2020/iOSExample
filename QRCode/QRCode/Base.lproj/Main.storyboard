@@ -77,6 +77,66 @@
                                             <segue destination="Pvm-cE-MIs" kind="show" id="GXe-b3-E5d"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="P1r-AK-KQF" style="IBUITableViewCellStyleDefault" id="Voi-vo-sQv">
+                                        <rect key="frame" x="0.0" y="196" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Voi-vo-sQv" id="WC8-8r-2qF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="扫码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P1r-AK-KQF">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PDh-gi-ICs" kind="show" id="zRu-rx-NtH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="QFk-mU-tTc" style="IBUITableViewCellStyleDefault" id="XNj-Gx-EAY">
+                                        <rect key="frame" x="0.0" y="240" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XNj-Gx-EAY" id="e0F-Ns-jNa">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="扫码带框" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QFk-mU-tTc">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="btD-pW-WkR" kind="show" id="swZ-5V-dbW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fSv-yL-8iO" style="IBUITableViewCellStyleDefault" id="03a-wM-hJC">
+                                        <rect key="frame" x="0.0" y="284" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="03a-wM-hJC" id="ZHj-Fk-pIn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="一维码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fSv-yL-8iO">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hZB-bV-F41" kind="show" id="eis-MJ-SCj"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -89,7 +149,109 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nx-bh-6ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202" y="137"/>
+            <point key="canvasLocation" x="-650" y="-135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NHi-8O-dUv">
+            <objects>
+                <viewController id="hZB-bV-F41" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VvV-mB-uIa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mho-NG-ih7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iK2-jK-L6T" customClass="BarCodeView" customModule="QRCode" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpK-fY-QDb">
+                                <rect key="frame" x="200" y="250" width="200" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HpK-fY-QDb" secondAttribute="height" multiplier="2:1" id="TUh-p7-1pW"/>
+                                    <constraint firstAttribute="width" constant="200" id="h2L-VN-KYk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-5I-gyh">
+                                <rect key="frame" x="200" y="350" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ca8-5I-gyh" firstAttribute="trailing" secondItem="HpK-fY-QDb" secondAttribute="trailing" id="0Vg-uI-tQI"/>
+                            <constraint firstItem="ca8-5I-gyh" firstAttribute="top" secondItem="HpK-fY-QDb" secondAttribute="bottom" id="TF9-IW-y2U"/>
+                            <constraint firstItem="HpK-fY-QDb" firstAttribute="centerY" secondItem="iK2-jK-L6T" secondAttribute="centerY" id="gN3-9L-RCZ"/>
+                            <constraint firstItem="HpK-fY-QDb" firstAttribute="centerX" secondItem="iK2-jK-L6T" secondAttribute="centerX" id="k9U-LA-5XS"/>
+                            <constraint firstItem="ca8-5I-gyh" firstAttribute="leading" secondItem="HpK-fY-QDb" secondAttribute="leading" id="o0f-c7-HOu"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="barCodeContainerView" destination="HpK-fY-QDb" id="B6I-W7-pux"/>
+                            <outlet property="barCodeLabel" destination="ca8-5I-gyh" id="zVg-v8-wdd"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="barCodeView" destination="iK2-jK-L6T" id="Xvs-7o-CfJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5T-nJ-Cou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-656" y="534"/>
+        </scene>
+        <!--Scan Has Rect View Controller-->
+        <scene sceneID="LkY-hj-f9V">
+            <objects>
+                <viewController id="btD-pW-WkR" customClass="QRScanHasRectViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g0w-2b-uOC"/>
+                        <viewControllerLayoutGuide type="bottom" id="ibN-4F-PuX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JHB-DS-wCY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wP-1c-OV0">
+                                <rect key="frame" x="200.5" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5wP-1c-OV0" secondAttribute="height" multiplier="1:1" id="H03-ae-ZEf"/>
+                                    <constraint firstAttribute="width" constant="200" id="Wjl-64-Xy0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5wP-1c-OV0" firstAttribute="centerY" secondItem="JHB-DS-wCY" secondAttribute="centerY" id="tt7-DD-Hxv"/>
+                            <constraint firstItem="5wP-1c-OV0" firstAttribute="centerX" secondItem="JHB-DS-wCY" secondAttribute="centerX" id="wk6-Mk-nAh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scanRectView" destination="5wP-1c-OV0" id="c9a-T9-JW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gox-yx-6hN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="1675"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="YlJ-Tp-Zpb">
+            <objects>
+                <viewController id="PDh-gi-ICs" customClass="QRScanViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ODX-v8-2Hz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ODu-MB-o7E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mth-8d-q60">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xS-S6-0hO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="981"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="woi-IZ-iAF">
@@ -127,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avR-ZS-aAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="27"/>
+            <point key="canvasLocation" x="482" y="-363"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4EV-A9-oq4">
@@ -151,6 +313,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="WgQ-mg-KDG" firstAttribute="centerY" secondItem="j5H-lf-tJl" secondAttribute="centerY" id="6rS-IU-Rsx"/>
                             <constraint firstItem="WgQ-mg-KDG" firstAttribute="centerX" secondItem="j5H-lf-tJl" secondAttribute="centerX" id="eai-o8-NBe"/>
@@ -159,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBd-xm-8xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="692"/>
+            <point key="canvasLocation" x="482" y="290"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wzg-WQ-QxF">
@@ -175,12 +338,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eg3-oz-SPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1022" y="137"/>
+            <point key="canvasLocation" x="-1370" y="-135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QRViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -205,15 +368,27 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Fph-Zw-uqK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GiG-Tj-O71"/>
                             <constraint firstItem="Fph-Zw-uqK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bQ0-rl-I0V"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nLM-ix-two" appends="YES" id="4LV-hS-Zqy"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="QRView" destination="Fph-Zw-uqK" id="hZY-Sx-OnY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="nLM-ix-two">
+                    <connections>
+                        <action selector="touchLongPressGesture:" destination="BYZ-38-t0r" id="Fjw-5H-Nhg"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="520" y="-625"/>
+            <point key="canvasLocation" x="482" y="-1009"/>
         </scene>
     </scenes>
 </document>
